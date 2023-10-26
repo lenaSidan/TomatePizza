@@ -18,7 +18,7 @@ export async function createPizzaSize(pizzaSize: PizzaSizeDTO): Promise<PizzaSiz
   });
 
   if (!res.ok) {
-    throw new Error('Pizza size konnte nicht erstellt werden');
+    throw new Error('Pizza size could not be created');
   }
   return res.json();
 }
@@ -34,7 +34,7 @@ export async function updatePizzaSize(pizzaSize: PizzaSize): Promise<PizzaSize> 
   });
 
   if (!res.ok) {
-    throw new Error('Pizza size konnte nicht aktualisiert werden');
+    throw new Error('Pizza size could not be updated');
   }
   return res.json();
 }
@@ -46,6 +46,6 @@ export async function deletePizzaSize(id: number): Promise<void> {
   });
 
   if (!res.ok) {
-    throw new Error('Pizza size konnte nicht gelöscht werden');
+    throw new Error('Pizza size could not be deleted');
   }
 }
